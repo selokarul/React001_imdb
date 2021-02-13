@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {StyledSearchBox} from "./SearchBox.style"
 
-export const SearchBox = () => {
+export const SearchBox = (props) => {
+
+    const [inputValue,setInputValue] = useState("");
+
     return (
         <StyledSearchBox>
-            <input/>
-            <button onClick={()=>{}}>Button</button>
+            <input onChange={(e) => setInputValue(e.target.value)}/>
+            <button onClick={()=>props.setSearchKeyword(inputValue)}>Button</button>
         </StyledSearchBox>
     )
 }

@@ -12,7 +12,7 @@ export const StyledCardWrapper = styled.div`
     flex-direction:column;
     transition: 0.2s; 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.22);
         box-shadow: 0.3rem 0.3rem 0.9rem rgba(0,0,0,0.1);
     }
 `
@@ -24,5 +24,4 @@ export const StyledCardText = styled.p`
 export const StyledMovieImage = styled.img`
     width:  auto;
     height: 80%;
-
 `

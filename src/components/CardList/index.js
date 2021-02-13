@@ -1,5 +1,4 @@
-
- import {Card} from "../Card/Card.index.js";
+import {Card} from "../Card/Card.index.js";
  import {StyledCardList} from "./CardList.style";
 
  export const CardList = ({movieList, baseImgUrl}) => {
@@ -10,7 +9,8 @@
             <Card 
                 title={movie.title} 
                 key={index}
-                imgSrc={baseImgUrl + movie.poster_path}
+                imgSrc={movie.poster_path ? baseImgUrl + movie.poster_path : baseImgUrl + "/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg"}
+                
             />)}
          </StyledCardList>
      )
